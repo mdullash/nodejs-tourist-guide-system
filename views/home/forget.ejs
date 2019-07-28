@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<style type="text/css">
+			.button {
+		    background-color: blue;
+		    border: none;
+		    color: white;
+		    padding: 5px 40px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		    border-radius: 5px;
+		}
+		</style>
+	</head>
+	<body>
+	<form method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+	<table align="center" width="300" >
+		<tr>
+			<td>
+				<fieldset >
+					<legend>Forget Password</legend>
+					
+					<table>
+					
+					<tr><td><label>Email:</label></td>
+					<td> <input type='email' name='email' /> 
+			
+					</td></tr>
+					
+					</table><hr/>
+					
+					<input class="button"type='submit' name='Submit' value='Submit' />
+				
+				</fieldset>
+			</td>
+		</tr>	
+	</table>
+	</form>
+	</body>
+</html>

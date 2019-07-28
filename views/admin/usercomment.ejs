@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Comment</title>
+	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+</head>
+<body>
+	<div align="center">
+          <img src="/images/logo1.jpg" alt="Logo" width="150" >
+          <h1 style="color: blue"><i>Intelligent Tourist Guide</i></h1>
+        </div>
+	<h1 align="center"> User-comment</h1>  
+	<a href="/admin">Back</a>|
+	<a href="/logout">logout</a>
+
+	<br><br>
+
+	<table border="1" width="100px" align="center">
+		<tr>
+			
+			<th>Email</th>
+			<th>User Comment</th>
+			
+		</tr>
+		<% for(var i=0; i < uList.length; i++){ %>
+		<tr>
+			<td><%= uList[i].email %></td>
+			<td><%= uList[i].usercomment %></td>
+		</tr>
+		<% } %>
+	</table>
+</body>
+</html>

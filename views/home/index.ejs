@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css">
+ 
+</head>
+<body>
+<form>
+  <table >
+  <div align="center">
+    <a href="/home/index"><img src="images/logo2.jpg" style="width: 15%"></a>
+    <h1><i>Intelligent Tourist Guide</i></h1>
+  </div>
+<div class="topnav">
+  <a class="active" href="/home/index">Home</a>
+   <a href="/registration"> Sign Up</a>
+    <a href="/login"> LogIn</a>
+    <a href="/comment"> Review</a>
+  <a href="/home/about">About</a>
+  <a href="/home/contact">Contact</a>
+  <div class="search-container">
+   
+  </div>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/sundorban.jpg" style="width:60%">
+  <div class="text">Sundorbon</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/sajek.jpg" style="width:60%">
+  <div class="text">Sajek</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/cox-Bazar.jpg" style="width:60%">
+  <div class="text">Cox's Bazar</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="images/Kuakata.jpg" style="width:60%">
+  <div class="text">Kuakata</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div>
+  <h1>Trending destinations</h1>
+  <table>
+    <tr>
+      <td>
+        <a href="/home/sundorban"><img src="images/sundorban.jpg" style="width: 50%"></a>
+       Sundorban
+      </td>
+      <td>
+        <a href="/home/coxbazar"><img src="images/sylhet.jpg" style="width: 50%"></a>
+        Shylhet
+      </td>
+      <td>
+       <a href="/home/bandorbon"> <img src="images/bandarban-tour.jpg" style="width: 50%"></a>
+        Bandorban
+      </td>
+      <td>
+       <a href="/home/kuakata"> <img src="images/Kuakata.jpg" style="width: 50%"></a>
+         Kuakata
+      </td>
+      <td>
+        <a href="/home/sajek"><img src="images/sajek.jpg" style="width: 50%"></a>
+        Sajek
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="/home/planner"><img src="images/Saint.jpg" style="width: 50%"></a>
+        Cox's Bazar
+      </td>
+      <td>
+        <a href="/home/barisal"><img src="images/b2.jpg" style="width: 50%"></a>
+        Barisals
+      </td>
+    </tr>
+  </table>
+</div>
+
+</br></br>
+<div align="center">
+  <a href="/home/about">About</a>
+  <a href="/home/contact">Contact</a>
+</div></br></br>
+
+  
+    <div align="center">Copy Right@2018</div>
+  
+</table>
+
+</form>
+</body>
+</html>

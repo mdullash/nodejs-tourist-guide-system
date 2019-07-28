@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete|admin</title>
+	<style type="text/css">
+		.button {
+		    background-color: red;
+		    border: none;
+		    color: white;
+		    padding: 5px 40px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		    border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center"> Delete-Page</h1>  
+	<div align="center"><img src="/images/logo1.jpg" alt="logo" width="250" ></div>
+	<a href="/admin">Back</a> |
+	<a href="/logout">Logout</a>
+     
+	<table width="300px" >
+		
+		<tr>
+			<td>Name</td>
+			<td width="2%">:</td>
+			<td><%=name%></td>
+		</tr>
+		<tr>
+			<td width="35%">User Name</td>
+			<td width="2%">:</td>
+			<td><%=username%></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td width="2%">:</td>
+			<td><%=password%></td>
+		</tr>
+	</table>
+	<br><br>
+	<b>Are you sure? This can't be undone of you click confirm!</b>
+
+	<form method="post">
+			<input type="hidden" name="uid" value="<%=id%>"/>
+			<input class="button"type="submit" name="delete" value="Confirm"/>
+	</form>
+
+</body>
+</html>

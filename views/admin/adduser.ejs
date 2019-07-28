@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add User</title>
+		<style>
+		.button {
+		    background-color: orange;
+		    border: none;
+		    color: white;
+		    padding: 5px 40px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		    border-radius: 5px;
+		}
+
+		input[type=text] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+input[type=password] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+	</style>
+ 
+</head>
+<body>
+	<div align="center">
+          <img src="/images/logo1.jpg" alt="Logo" width="150" >
+          <h1 style="color: blue"><i>Intelligent Tourist Guide</i></h1>
+        </div>
+	<table align="center">
+		<tr>
+			<td>
+	<h1 align="center"></style> Add User</h1>  
+	<a href="/admin">Back</a>|
+	<a href="/logout">Logout</a>
+
+	<form method="post">
+	<table width="300px" >
+		<tr>
+			<td>Name</td>
+			<td width="2%">:</td>
+			<td><input type="text" name="pname" placeholder="Enter Name..." required=""></td>
+		</tr>
+		<tr>
+			<td width="35%">User Name</td>
+			<td width="2%">:</td>
+			<td><input type="text" name="uname" placeholder="Username...." required=""></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td width="2%">:</td>
+			<td><input type="password" name="password" placeholder="Password..." required=""></td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td></td>
+			<td><input class="button"type="submit" name="save" value="Save"></td>
+		</tr>
+	</table>
+	</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
